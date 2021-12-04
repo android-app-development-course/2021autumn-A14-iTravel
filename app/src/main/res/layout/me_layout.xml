@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:foreground="@drawable/ic_baseline_navigate_before_24"
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/my_id"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/touxiang" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="30dp"
+                    android:text="落樱飞飞"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/count_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:text="出趣玩账号：123456" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/per_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去编辑资料完善个人信息~~"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/focus_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="1"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/focus_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="关注"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/fans_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="2"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="粉丝"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/collect_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:text="4"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:text="收藏或点赞"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button"
+                android:text="编辑个人资料"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+            <Button
+                android:id="@+id/set_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button"
+                android:text="设置"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/my_table"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            app:tabIndicatorColor="#FF5722">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原创" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已种草" />
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

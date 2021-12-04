@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateIntroductionActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_navigate_before_24"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="封面"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_baseline_add_box_24"
+            android:backgroundTint="#CACACA" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="好地方"
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="正文"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="来过玩！"
+            android:maxLines="5"
+            android:minLines="5"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="下一步"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
