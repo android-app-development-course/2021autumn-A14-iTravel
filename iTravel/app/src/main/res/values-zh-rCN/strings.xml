@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">出趣玩</string>
+    <string name="hello_blank_fragment">你好空白的片段</string>
+    <string name="back">&lt;</string>
+    <string name="grass">已打卡</string>
+    <string name="register">注册</string>
+    <string name="title_activity_login">登录界面</string>
+    <string name="title_activity_register">注册界面</string>
+    <string name="prompt_email">邮箱：</string>
+    <string name="prompt_password">密码：</string>
+    <string name="action_sign_in">注册</string>
+    <string name="register_failed">"注册失败"</string>
+    <string name="register_successful">"注册成功"</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="account_or_password_is_invalid">账户或密码无效</string>
+    <string name="login_failed">"登录失败"</string>
+    <string name="login_successful">"登录成功"</string>
+    <string name="welcome">"欢迎"</string>
+    <string name="invalid_username">不是一个合法的用户名</string>
+    <string name="invalid_password">密码长度不少于5</string>
+    <string name="remember_password">记住账号和密码</string>
+    <string name="input_account">请输入账户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_new_password">请输入密码</string>
+    <string name="account">账户名：</string>
+    <string name="password">密码：</string>
+    <string name="new_password">确认密码：</string>
+    <string name="count_try">可尝试剩余次数：</string>
+    <string name="enter_act_and_psw">请输入账户和密码</string>
+    <string name="makesure">请确保密码输入一致</string>
+</resources>

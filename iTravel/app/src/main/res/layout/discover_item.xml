@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/discoverImage"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/ic_launcher_foreground" />
@@ -48,18 +48,22 @@
                 tools:srcCompat="@drawable/touxiang" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/authorName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="落樱飞飞"
+                android:textColor="@color/qianhui"
                 android:textSize="10sp" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/no_grass" />
+                android:id="@+id/collect_button"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/button_selector"
+                />
         </LinearLayout>
     </LinearLayout>
 

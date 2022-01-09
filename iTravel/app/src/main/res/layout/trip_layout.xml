@@ -1,51 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="left"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/back_button"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_baseline_navigate_before_24"-->
+<!--            android:backgroundTint="#000000"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="145dp"-->
+<!--            android:text="当前未在打卡"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#222222"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:background="@android:color/darker_gray" />-->
+
+
     <LinearLayout
+        android:id="@+id/weidaka"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:padding="50dp">
 
-        <Button
-            android:id="@+id/back_button"
-            android:layout_width="50dp"
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:alpha="0.5"
+            android:src="@drawable/weidaka" />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_navigate_before_24"
-            android:backgroundTint="#000000"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="您当前未在打卡任何行程哦~" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从种草列表" />
+
+            <TextView
+                android:id="@+id/daoru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导入"
+                android:textColor="@color/link" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，立即开始打卡吧！" />
+        </LinearLayout>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@android:color/darker_gray" />
 
     <LinearLayout
+        android:id="@+id/zhengzaidaka"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在打卡"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#3A3A3A" />
 
         <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
+            android:id="@+id/back_to"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="#FF5722"
+            android:text="返回行程"
+            android:textColor="#FFFFFF" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="140dp"
+            android:layout_height="0.7dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="   为您推荐   "
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="140dp"
+            android:layout_height="0.7dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discoverRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6" />
 
 </LinearLayout>

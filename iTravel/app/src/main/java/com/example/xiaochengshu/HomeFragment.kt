@@ -1,5 +1,6 @@
 package com.example.xiaochengshu
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,10 @@ import kotlinx.android.synthetic.main.home_layout.*
 import android.util.Log
 
 class HomeFragment : Fragment() {
+    val focus_fragment = FocusFragment()
+    val discover_fragment = DiscoverFragment()
+    val near_fragment = NearFragment()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,9 +33,9 @@ class HomeFragment : Fragment() {
 
             override fun createFragment(position: Int) = //设置对应的fragment
                 when(position){
-                    0 -> FocusFragment()
-                    1 -> DiscoverFragment()
-                    else -> NearFragment()
+                    0 -> focus_fragment
+                    1 -> discover_fragment
+                    else -> near_fragment
                 }
         }
 
@@ -44,5 +49,9 @@ class HomeFragment : Fragment() {
         }.attach()
 
         viewpager.setCurrentItem(1)//设置默认页
+
+
     }
+
+
 }

@@ -47,12 +47,13 @@
             android:textColor="#000000"
             android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/button7"
+        <ImageView
+            android:id="@+id/addImg"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/ic_baseline_add_box_24"
-            android:backgroundTint="#CACACA" />
+            android:src="@drawable/ic_baseline_add_box_24"
+            android:backgroundTint="#CACACA"
+            />
 
         <TextView
             android:id="@+id/textView10"
@@ -64,7 +65,7 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/title_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -82,7 +83,7 @@
             android:textSize="18sp" />
 
         <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView"
+            android:id="@+id/intro_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top"

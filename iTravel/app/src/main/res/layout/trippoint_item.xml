@@ -1,46 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tripPointItem"
     android:layout_width="match_parent"
     android:layout_height="90dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/border"
+    android:paddingTop="15dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="0dp"
-        android:layout_marginLeft="10dp">
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:cardCornerRadius="10dp"-->
+    <!--        app:cardElevation="0dp"-->
+    <!--        android:layout_marginLeft="10dp">-->
 
-        <ImageView
-            android:id="@+id/TripPointImage"
-            android:layout_width="100dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_vertical"
-            android:scaleType="fitXY" />
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/TripPointImage"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY" />
+    <!--    </androidx.cardview.widget.CardView>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-<!--        行程点标题-->
-        <TextView
-            android:id="@+id/TripPointName"
-            android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-<!--        行程点简介-->
+            android:orientation="horizontal">
+            <!-- 行程店序号-->
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="1."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- 行程点标题-->
+            <TextView
+                android:id="@+id/TripPointName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!-- 行程点简介-->
         <TextView
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp" />
     </LinearLayout>
-
 
 
 </LinearLayout>

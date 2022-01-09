@@ -3,6 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/border.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/button.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/daka_background.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/daka_foreground.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/edit_bg.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/edit_trip_background.xml" value="0.11944444444444445" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/edit_trip_foreground.xml" value="0.1287037037037037" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/end_trip_foreground.xml" value="0.11574074074074074" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/ic_baseline_navigate_before_24.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/drawable/round_btn.xml" value="0.1953125" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/activity_create_introduction.xml" value="0.11911231884057971" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/activity_create_trip.xml" value="0.11911231884057971" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/activity_introduction.xml" value="0.11911231884057971" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/activity_main.xml" value="0.11231884057971014" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/activity_trip.xml" value="0.11684782608695653" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/add_layout.xml" value="0.11911231884057971" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/daoru_item.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/daoru_layout.xml" value="0.12454710144927536" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/discover_item.xml" value="0.11684782608695653" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/discover_layout.xml" value="0.11684782608695653" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/edit_trip_layout.xml" value="0.11231884057971014" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/home_layout.xml" value="0.12454710144927536" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/original.xml" value="0.12092391304347826" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/picture_layout.xml" value="0.11005434782608696" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/trip_layout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/trippoint_item.xml" value="0.1634963768115942" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/trippointdaka_item.xml" value="0.14175724637681159" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/trippointedit_item.xml" value="0.1322463768115942" />
+        <entry key="..\:/Android/AndroidStudioProjects/iTravel-master/app/src/main/res/layout/zhengzaidaka_layout.xml" value="0.1" />
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.26979166666666665" />
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.26979166666666665" />
@@ -32,6 +63,51 @@
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/layout/store_layout.xml" value="0.21240942028985507" />
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/layout/trip_layout.xml" value="0.23777173913043478" />
         <entry key="..\:/Code/Android/Xiaochengshu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26979166666666665" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/drawable/ic_baseline_check_box_outline_blank_24.xml" value="0.265625" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_create_trip.xml" value="0.264" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_find_poi.xml" value="0.25364583333333335" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_location.xml" value="0.4" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_login.xml" value="0.1296875" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_main.xml" value="0.2477355072463768" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_map_container.xml" value="0.25364583333333335" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_my_info.xml" value="0.1296875" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/activity_trip.xml" value="0.2" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/comments_item.xml" value="0.23505434782608695" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/discover_item.xml" value="0.2513586956521739" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/discover_layout.xml" value="0.2477355072463768" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/home_layout.xml" value="0.23505434782608695" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/original.xml" value="0.12708333333333333" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/trip_layout.xml" value="0.264" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/layout/zhengzaidaka_layout.xml" value="0.264" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/menu/find_poi.xml" value="0.25364583333333335" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.265625" />
+        <entry key="..\:/Code/Android/iTravel-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.265625" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/drawable/button_ordinary.xml" value="0.134375" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_collect_dialog.xml" value="0.264" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_create_trip.xml" value="0.13802083333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_fans.xml" value="0.10052083333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_introduction.xml" value="0.2" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_login.xml" value="0.1140625" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_main.xml" value="0.16302083333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_my_info.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_register.xml" value="0.24114583333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_set.xml" value="0.2" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/activity_trip.xml" value="0.16041666666666668" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/comments_item.xml" value="0.16302083333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/discover_item.xml" value="0.13858695652173914" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/discover_layout.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/fans_item.xml" value="0.10052083333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/focus_item.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/focus_item2.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/focus_layout.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/focus_layout2.xml" value="0.13858695652173914" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/massage_layout.xml" value="0.24114583333333334" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/me_layout.xml" value="0.2" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/message_item.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/message_layout.xml" value="0.1" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/near_layout.xml" value="0.12083333333333333" />
+        <entry key="..\:/software/Android/AndroidStudioProject/chuquwan/iTravel-master/app/src/main/res/layout/set_layout.xml" value="0.1625" />
         <entry key="..\:/software/Android/AndroidStudioProject/iTravel-master/app/src/main/res/drawable/button.xml" value="0.14351851851851852" />
         <entry key="..\:/software/Android/AndroidStudioProject/iTravel-master/app/src/main/res/drawable/edit_bg.xml" value="0.25729166666666664" />
         <entry key="..\:/software/Android/AndroidStudioProject/iTravel-master/app/src/main/res/drawable/five_rating_bar.xml" value="0.25729166666666664" />

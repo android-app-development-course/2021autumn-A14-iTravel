@@ -37,13 +37,13 @@
             style="?android:attr/borderlessButtonStyle"/>
 
         <Button
-            android:id="@+id/store"
+            android:id="@+id/trip"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="行程"
+            android:text="打卡"
             android:textColor="#000000"
             android:textSize="15sp" />
 

@@ -1,22 +1,38 @@
 package com.example.xiaochengshu
 
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.comments_item.*
+import kotlinx.android.synthetic.main.home_layout.*
 
-class MainActivity : AppCompatActivity() {
+
+
+
+
+
+class MainActivity : BaseActivity() {
     val home_fragment = HomeFragment()
     val store_fragment = TripFragment()
     val add_fragment = AddFragment()
     val message_fragment = MessageFragment()
     val me_fragment = MeFragment()
 
+    val userId=BitmapApplication.getMyUserId()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
 
         /*初始化*/
         /*
@@ -42,14 +58,18 @@ class MainActivity : AppCompatActivity() {
 
         //设置按钮文字大小
         home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
-        store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+        trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
         massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
         me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
 
         //设置底部导航栏的按钮功能
-        home.setOnClickListener{
+        home.setOnClickListener {
             val fragmentManager = supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
+
+            if (!home_fragment.isHidden && home_fragment.tablayout.selectedTabPosition == 1)//正在被显示则返回顶部刷新
+                home_fragment.discover_fragment.reflshWithEffect()
+
             transaction.hide(store_fragment)
             transaction.hide(add_fragment)
             transaction.hide(message_fragment)
@@ -57,16 +77,16 @@ class MainActivity : AppCompatActivity() {
             if (home_fragment.isAdded)
                 transaction.show(home_fragment)
             else
-                transaction.add(R.id.fragmentlayout,home_fragment)
+                transaction.add(R.id.fragmentlayout, home_fragment)
             transaction.commit()
 
             home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
-            store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
         }
 
-        store.setOnClickListener{
+        trip.setOnClickListener {
             val fragmentManager = supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.hide(home_fragment)
@@ -76,35 +96,21 @@ class MainActivity : AppCompatActivity() {
             if (store_fragment.isAdded)
                 transaction.show(store_fragment)
             else
-                transaction.add(R.id.fragmentlayout,store_fragment)
+                transaction.add(R.id.fragmentlayout, store_fragment)
             transaction.commit()
 
             home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
             massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
         }
 
-        add.setOnClickListener{
-            val fragmentManager = supportFragmentManager
-            val transaction = fragmentManager.beginTransaction()
-            transaction.hide(home_fragment)
-            transaction.hide(store_fragment)
-            transaction.hide(message_fragment)
-            transaction.hide(me_fragment)
-            if (add_fragment.isAdded)
-                transaction.show(add_fragment)
-            else
-                transaction.add(R.id.fragmentlayout,add_fragment)
-            transaction.commit()
-
-            home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+        add.setOnClickListener {
+            val intent = Intent(this,CreateIntroductionActivity::class.java)
+            startActivity(intent)
         }
 
-        massage.setOnClickListener{
+        massage.setOnClickListener {
             val fragmentManager = supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.hide(home_fragment)
@@ -114,16 +120,16 @@ class MainActivity : AppCompatActivity() {
             if (message_fragment.isAdded)
                 transaction.show(message_fragment)
             else
-                transaction.add(R.id.fragmentlayout,message_fragment)
+                transaction.add(R.id.fragmentlayout, message_fragment)
             transaction.commit()
 
             home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
             me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
         }
 
-        me.setOnClickListener{
+        me.setOnClickListener {
             val fragmentManager = supportFragmentManager
             val transaction = fragmentManager.beginTransaction()
             transaction.hide(home_fragment)
@@ -133,13 +139,86 @@ class MainActivity : AppCompatActivity() {
             if (me_fragment.isAdded)
                 transaction.show(me_fragment)
             else
-                transaction.add(R.id.fragmentlayout,me_fragment)
+                transaction.add(R.id.fragmentlayout, me_fragment)
             transaction.commit()
 
             home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
-            store.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
+        }
+        val bundle = Bundle()
+
+        val user_name = intent!!.getStringExtra("user_name")
+        if (user_name != null) {
+            Log.d("1111111222222","23333333")
+            bundle.putString("user_name", user_name)
+            me_fragment.setArguments(bundle)
+        }
+
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+        val user_name = intent!!.getStringExtra("user_name")
+        if (user_name != null) {
+            val bundle = Bundle()
+            bundle.putString("user_name", user_name)
+
+            me_fragment.setArguments(bundle)
+            val fragmentManager = supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.hide(home_fragment)
+            transaction.hide(store_fragment)
+            transaction.hide(add_fragment)
+            transaction.hide(message_fragment)
+//            var me_fragment =
+//            me_fragment.
+            if (me_fragment.isAdded){
+                transaction.show(me_fragment)
+            }
+            else
+                transaction.add(R.id.fragmentlayout, me_fragment)
+                transaction.commit()
+
+
+
+            home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
             me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
         }
     }
+
+
+    //内部类：广播接收器
+    inner class MyBroadcastReceiver : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            val fragmentManager = supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+
+            if (!home_fragment.isHidden && home_fragment.tablayout.selectedTabPosition == 1)//正在被显示则返回顶部刷新
+                home_fragment.discover_fragment.reflshWithEffect()
+
+            transaction.hide(store_fragment)
+            transaction.hide(add_fragment)
+            transaction.hide(message_fragment)
+            transaction.hide(me_fragment)
+            if (home_fragment.isAdded)
+                transaction.show(home_fragment)
+            else
+                transaction.add(R.id.fragmentlayout, home_fragment)
+            transaction.commit()
+
+            home.setTextSize(TypedValue.COMPLEX_UNIT_SP, 17F)
+            trip.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            massage.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+            me.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15F)
+        }
+    }
+
 }
+
+
+
